@@ -59,7 +59,6 @@ function get_arabic_num(str)
       str = string.gsub(str, "M", "", 1)
     end;
   end;
-  --print(unpack(l))
   for i,v in ipairs(l) do
     total = total + v
   end;
@@ -87,9 +86,4 @@ for line in fr:lines() do
   end
 end
 fw:close()
---local content = f:read("*all")
---for line in content do
-  --print(tostring(line))
---end
---print(content)
 fr:close()
